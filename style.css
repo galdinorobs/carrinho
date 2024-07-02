@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #2a7be2;
+    font-size: 1.9rem;
+    padding-bottom: 20px;
+}
+
+
+.cart {
+    display: flex;
+    gap: 20px;
+}
+
+.product,
+#quantity {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+}
+
+#quantity:focus {
+    border-color: #2a7be2;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+.product-selection label,
+.product-selection select,
+.product-selection input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.add,
+.clear {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+}
+
+.add {
+    background-color: #2a7be2;
+    color: #ffffff;
+}
+
+.clear {
+    background-color: #d3d3d3;
+    color: #000000;
+}
+
+.cart-items ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-items ul li {
+    margin-bottom: 10px;
+}
+
+.cart-items p {
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.cart-items h3 {
+    text-align: center;
+}
+
+.error-message {
+    color: #ff0000;
+    margin-top: 10px;
+}
+
+@media (min-width: 300px) and (max-width: 600px){
+    * {
+        text-align: center;
+    }
+
+    .cart {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cart-items {
+        margin-top: 10px;
+    }
+
+    .add,
+    .clear {
+        width: auto;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+}
